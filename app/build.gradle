@@ -3,8 +3,6 @@ plugins {
     id 'kotlin-android'
 }
 
-
-
 android {
     compileSdk 31
 
@@ -55,6 +53,13 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0'
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+
+
+
+    implementation 'com.github.aneesfazal1:BlinkEffect-library:0.2.5'
+
+
 
 
     testImplementation 'junit:junit:4.+'

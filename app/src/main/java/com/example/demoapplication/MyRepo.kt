@@ -27,7 +27,7 @@ class MyRepo(application: Application?) {
         val call: Call<ResponseBody> = RetrofitClient.instance?.getapi()?.data as Call<ResponseBody>
         call.enqueue(object : Callback<ResponseBody?> {
             override fun onResponse(call: Call<ResponseBody?>?, response: Response<ResponseBody?>) {
-                if (response.code() === 200) {
+                if (response.code() == 200) {
 
                     assert(response.body() != null)
                     val dataobj = JSONObject(response.body()!!.string())
